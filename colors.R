@@ -15,7 +15,8 @@ quantColorLegend <- function(x,col=c("#ca0020","#f7f7f7","#0571b0")){
   image(1, brk, t(matrix(1:length(x))), col=Pal(length(x)), xaxt="n", xlab="")
 }
 
-randval <- exp(rnorm(50,0,1.2))
-par(mfcol=c(1,2))
-plot(randval,pch=19,col=quantColor(randval))
-quantColorLegend(randval)
+# Example
+#randval <- exp(rnorm(50,0,1.2))
+#par(mfcol=c(1,2))
+#plot(randval,pch=19,col=quantColor(randval))
+#quantColorLegend(randval)
