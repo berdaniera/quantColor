@@ -5,7 +5,10 @@ The function quantColor(x,col) returns colors for the "x" values based on the qu
 quantColorLegend(x, col) creates a rudimentary legend for the color ramp.
 
 For example:
+
+```{r}
 randval <- exp(rnorm(50,0,1.2))
 par(mfcol=c(1,2))
 plot(randval,pch=19,col=quantColor(randval))
 quantColorLegend(randval)
+```
